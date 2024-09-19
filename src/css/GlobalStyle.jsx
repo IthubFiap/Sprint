@@ -15,17 +15,9 @@ html {
 }
 
 body {
-    display: grid;
-    grid-template-areas:
-        'nav nav nav nav'
-        'home home home home'
-        'sobre sobre sobre sobre'
-        'pilotos pilotos pilotos pilotos'
-        'login login login login';
-    
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: repeat(5, auto); 
-    font-size: 1rem;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 `
