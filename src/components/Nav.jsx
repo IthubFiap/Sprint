@@ -1,7 +1,7 @@
-import {Link} from 'react-router-dom';
-import { NavStyle } from "../css/NavStyle";
-import FormulaE from '../assets/FormulaE.png';
-import { RxAvatar } from "react-icons/rx";
+import {Link} from 'react-router-dom'
+import { NavStyle } from "../css/NavStyle"
+import FormulaE from '../assets/FormulaE.png'
+import { RxAvatar } from 'react-icons/rx'
 
 const Nav =()=>{
     return(

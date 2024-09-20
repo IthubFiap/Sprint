@@ -4,7 +4,6 @@ export const FooterStyle = styled.section`
 
 footer{
     width: 100%;
-    height: 80%;
     margin-top: auto;
     background-color: #1391D9;
     color: white;
