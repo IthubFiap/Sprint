@@ -17,7 +17,7 @@ const Nav =()=>{
             <ul>
                 <Link to="/" className="navLink">Home</Link>
                 <Link to="/sobre" className="navLink">Sobre</Link>
-                <Link to="/carros" className="navLink">Pilotos</Link>
+                <Link to="/pilotos" className="navLink">Pilotos</Link>
                 <Link to='/login' className="navLink">Login</Link>
             </ul>   
         </section>

@@ -3,20 +3,19 @@ import styled from 'styled-components';
 export const NavStyle = styled.section`
 .nav {
     display: grid;
-    grid-template-columns: 1fr auto; 
     background: #1391D9;
-    padding: 1px 20px;
+    padding: 10px;
     width: 100%;
 }
 
 .container{
     display: flex;
     justify-content: flex-end;
-    padding: 10px 5px;
+    padding: 3px;
 }
 
 .nav .logo{
-    width: 15%;
+    width: 12%;
 }
 
 .nav .avatar{
