@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const HomeStyle = styled.section`
 
 .body{
-    background-image: linear-gradient(to top, rgba(22, 21, 21, 0.96), rgba(22, 21, 21, 1)), url(src/assets/Fundo1.jpg); 
+    background-image: linear-gradient(to top, rgba(22, 21, 21, 0.957), rgba(22, 21, 21, 1)), url(src/assets/Fundo1.jpg); 
     color: white;
 }
 
@@ -21,8 +21,7 @@ export const HomeStyle = styled.section`
 }
 
 .text{
-    opacity: 0;
-    transition: opacity 0.3s ease, bordem-bottom 0.3s ease;
+    animation: blink 2s infinite;
 }
 
 .container:hover .text{
@@ -31,10 +30,10 @@ export const HomeStyle = styled.section`
 }
 
 .container-img{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 20px;
+    background-image: linear-gradient(to top, rgba(22, 21, 21, 0.9), rgba(22, 21, 21, 1)), url(src/assets/Fundo.jpg); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .banner{
@@ -43,7 +42,6 @@ export const HomeStyle = styled.section`
 }
 
 .info{
-    padding: 30px;
     display: flex; 
     flex-direction: column; 
     align-items: start; 
@@ -51,10 +49,10 @@ export const HomeStyle = styled.section`
 }
 
 .info h2{
+    padding-left: 50px;
     font-size: 5rem; 
     max-width: 400px;
     transition: all 0.5s ease;
-    border-bottom: 5px solid #1391D9;
 }
 
 .info h2:hover{
@@ -62,7 +60,10 @@ export const HomeStyle = styled.section`
 }
 
 .info p{
+    padding-left: 50px;
+    padding-bottom: 100px;
     font-size: 1.4rem;
+    max-width: 500px;
 }
 
 .grid-card{
@@ -125,17 +126,59 @@ export const HomeStyle = styled.section`
     scale: 1.2;
 }
 
-.title .icon {
+.title .icon{
     width: 70px;
     height: auto;
-    animation: run 2s linear infinite; /* Aplica a animação */
+    animation: run 2s linear infinite; 
 }
 
-.title .icon:hover {
-    transform: scale(1.3); /* Aumenta o ícone ao passar o mouse */
+.title .icon:hover{
+    transform: scale(1.3); 
 }
 
-@keyframes run {
+.slider-section{
+    text-align: center;
+    background-color: #1391D9;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.slider-title{
+    font-size: 2rem;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide{
+    min-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #161515f4;
+}
+
+.slide-image{
+    width: 98%;  
+    height: 98%; 
+    object-fit: cover; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@keyframes run{
     0% {
         transform: translateX(-100px); /* Começa fora da tela à esquerda */
     }
@@ -144,6 +187,21 @@ export const HomeStyle = styled.section`
     }
     100% {
         transform: translateX(-100px); /* Volta para fora da tela à esquerda */
+    }
+}
+
+@keyframes blink{
+    0% {
+        opacity: 0;
+        border-bottom: 3px solid transparent;
+    }
+    50% {
+        opacity: 1;
+        border-bottom: 3px solid white;
+    }
+    100% {
+        opacity: 0;
+        border-bottom: 3px solid transparent;
     }
 }
 
