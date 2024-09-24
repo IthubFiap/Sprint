@@ -15,11 +15,13 @@ export const NavStyle = styled.section`
 }
 
 .nav .logo{
-    width: 12%;
+    margin-top: 5px;
+    width: 150px;
+    height: 55px;
 }
 
 .nav .avatar{
-    width: 70px; 
+    width: 50px; 
     height: 70px;
 }
 
@@ -45,6 +47,6 @@ export const NavStyle = styled.section`
 .navLink:hover{
     color:#1391D9;
     box-shadow: 5px 5px #1391D9;
-
 }
+
 `
