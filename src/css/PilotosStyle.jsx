@@ -37,6 +37,8 @@ export const PilotosStyle = styled.section`
 .piloto-card img{
     width: 100%;
     height: auto;
+    padding: 15px;
+    border-radius: 300px;
     border-bottom: 5px solid #1391D9; 
 }
 

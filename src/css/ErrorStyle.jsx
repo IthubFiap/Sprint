@@ -7,26 +7,26 @@ export const ErrorStyle = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* A página ocupará a altura total da janela */
-    background-color: #161515; /* Cor de fundo escura */
-    color: #fff; /* Cor do texto */
+    height: 100vh;
+    background-color: #161515; 
+    color: #fff; 
     text-align: center;
     padding: 20px;
 }
 
 .error-container h1 {
-    font-size: 8rem; /* Título grande para o código de erro */
+    font-size: 8rem; 
     margin: 0;
-    color: #1391D9; /* Cor azul para destaque */
+    color: #1391D9; 
 }
 
 .error-container h2 {
-    font-size: 3rem; /* Texto menor para a mensagem */
+    font-size: 3rem; 
     margin: 10px 0;
 }
 
 .error-container p {
-    font-size: 1.5rem; /* Descrição adicional */
+    font-size: 1.5rem; 
     max-width: 600px;
 }
 
@@ -34,9 +34,9 @@ export const ErrorStyle = styled.section`
     margin-top: 20px;
     display: inline-block;
     font-size: 1.2rem;
-    color: #1391D9; /* Link com destaque */
+    color: #1391D9; 
     text-decoration: none;
-    border: 2px solid #1391D9; /* Borda azul */
+    border: 2px solid #1391D9; 
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
