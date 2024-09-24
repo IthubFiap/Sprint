@@ -7,6 +7,7 @@ import Home from './routes/Home.jsx'
 import Sobre from './routes/Sobre.jsx'
 import Pilotos from './routes/Pilotos.jsx'
 import Login from './routes/Login.jsx'
+import Dashboard from './routes/Dashboard.jsx'
 import GlobalStyle from './css/GlobalStyle.jsx'
 
 const router = createBrowserRouter([
@@ -18,7 +19,8 @@ const router = createBrowserRouter([
       {path:'/',element:<Home/>},
       {path:'/sobre',element:<Sobre/>},
       {path:'/pilotos',element:<Pilotos/>},
-      {path:'/login',element:<Login/>}
+      {path:'/login',element:<Login/>},
+      {path:'/dashboard',element:<Dashboard/>},
     ]
   }
 ])
