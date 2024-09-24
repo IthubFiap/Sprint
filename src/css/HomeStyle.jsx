@@ -108,22 +108,16 @@ export const HomeStyle = styled.section`
 
 .card:hover{
     transform: translateY(-5px); 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.card span{
+    font-size: 3.5rem;
+    color: white;
 }
 
 .card h1{
-    font-size: 1.2rem; 
-    margin: 0; 
-}
-
-.card h2{
-    font-size: 6rem;
+    font-size: 1.2rem;
     transition: all ease 0.5s;
-}
-
-.card h2:hover{
-    opacity: 1;
-    scale: 1.2;
 }
 
 .title .icon{
