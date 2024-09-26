@@ -103,4 +103,22 @@ export const SobreStyle = styled.section`
     }
 }
 
-`;
+@media (max-width:520px){
+
+    .formula-text{
+        max-width: 90%;
+        padding-top: 200px;
+    }
+
+    .square{
+        padding: 20px;
+        max-width: 50%;
+    }
+
+    .team-member{
+        width: 95%;
+    }
+
+} 
+
+`

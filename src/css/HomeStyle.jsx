@@ -199,4 +199,19 @@ export const HomeStyle = styled.section`
     }
 }
 
+@media (max-width:520px){
+
+    .container{
+        padding: 30px;
+    }
+
+    .icon{
+        width: 20%;
+    }
+
+    .text{
+        font-size: 1.5rem;
+    }
+} 
+
 `
